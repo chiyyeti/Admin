@@ -1,0 +1,32 @@
+
+
+<app-header></app-header>
+<mat-drawer-container class="app-container">
+    <mat-drawer mode="side" opened>
+        
+        <app-sider></app-sider>
+        
+    </mat-drawer>
+    <mat-drawer-content>
+        
+      <div class="mt-5 ml-3">
+        <router-outlet></router-outlet>
+      </div>
+
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+<app-footer></app-footer>
+
+<!-- 
+<app-header></app-header>
+
+
+<app-sider></app-sider>
+
+        <router-outlet></router-outlet>
+
+
+
+<app-footer></app-footer> -->
+

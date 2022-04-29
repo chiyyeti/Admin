@@ -1,0 +1,71 @@
+<!-- 
+<div>
+
+    <p>
+        <mat-toolbar class="nav" >
+         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span><img src="../../../assets/logo.png" alt="" width="200px"  height="auto"></span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button >
+          <img src="../../../assets/logo.png" alt="" id="acc" style="border-radius: 50%; width: auto; height: auto; ">
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+         <mat-icon>share</mat-icon>
+       </button>
+      </mat-toolbar>
+      </p>
+</div> -->
+
+
+<mat-toolbar>
+    <mat-toolbar-row class="  justify-content-between"  id="nav">
+        <!-- <button mat-icon-button><mat-icon>menu</mat-icon></button> -->
+        <span><img src="../../../assets/logo.png" alt="" width="200px" height="auto"></span>
+        <span><img src="" alt=""></span>
+        
+        <div class="row mr-4 ml-auto  mt-3" >
+           
+               <!-- <mat-icon matPrefix  id="searchbar"   >search</mat-icon>
+               <input matInput type="search" placeholder="      search here" style="width: 400px;" > -->
+               <!-- <div class="inner-addon left-addon">
+                
+                <i class="fa-duotone fa-magnifying-glass" id="searchicon"></i>
+                <input type="text" placeholder="search here" class="form-control" />
+            </div> -->
+
+
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search" style="width: 400px;">
+              </div>
+        </div>
+
+
+       
+
+       
+
+        <div class="row mr-2 ml-auto">
+            <ul>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+                        <img src="../../../assets/avatar.png" alt="" class="user-image mr-1 p-2">
+                        User Name
+                        <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="logout()">
+                            
+                            <mat-icon>logout</mat-icon>
+                            Logout
+                        </button>
+                    </mat-menu>
+
+                </li>
+            </ul>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
